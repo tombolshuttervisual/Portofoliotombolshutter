@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography - Tombol Shutter Visual</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header, footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    h1 {
+      margin: 0;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .project-card {
+      background-color: #1a1a1a;
+      border: 1px solid #444;
+      padding: 1rem;
+      width: 300px;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .project-card h2 {
+      color: #fff;
+    }
+    .project-card p {
+      color: #ccc;
+    }
+    .project-card a {
+      color: #0af;
+      text-decoration: none;
+    }
+    .search {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .search input {
+      padding: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1rem;
+    }
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slide.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Photography</h1>
+    <nav>
+      <a href="index.html" style="color:#fff;">← Back to Home</a>
+    </nav>
+  </header>
+
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="Cari projek Photography...">
+  </div>
+
+  <div class="projects" id="projectList">
+    <div class="project-card">
+      <img src="out1.jpg" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>EDDY'S ENGLISH CAMP YBM BRILiaN</h2>
+      <p>Foto dokumentasi dari event Eddy' English Camp YBM BRILiaN.</p>
+    </div>
+    <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="foto1.png" alt="Gambar 1">
+        <img class="slide" src="foto2.png" alt="Gambar 2">
+        <img class="slide" src="foto3.png" alt="Gambar 3">
+        <img class="slide" src="foto4.png" alt="Gambar 4">
+        <img class="slide" src="foto5.png" alt="Gambar 5">
+        <img class="slide" src="foto6.png" alt="Gambar 6">
+        <img class="slide" src="foto7.png" alt="Gambar 7">
+      </div>
+      <h2>GUNUNG GAMBIR WITH PRASKALABER</h2>
+      <p>Foto dokumentasi dari acara bersih-bersih Gunung Gambir bersama dengan Pramuka SMKN 8 Jember.</p>
+    </div>
+    <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="sport1.jpg" alt="Gambar 1">
+        <img class="slide" src="sport2.jpg" alt="Gambar 2">
+        <img class="slide" src="sport3.jpg" alt="Gambar 3">
+      </div>
+      <h2>SMKN 8 JEMBER MINI SOCCER</h2>
+      <p>Foto yang bertemankan sport pada acara liga mini soccer bersama pegawai di SMKN 8 Jember.</p>
+    </div>
+    <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="paskib1.jpg" alt="Gambar 1">
+        <img class="slide" src="paskib2.jpg" alt="Gambar 2">
+        <img class="slide" src="paskib3.jpg" alt="Gambar 3">
+        <img class="slide" src="paskib4.jpg" alt="Gambar 3">
+        <img class="slide" src="paskib5.jpg" alt="Gambar 3">
+      </div>
+      <h2>UPACARA PENGIBARAN BENDERA</h2>
+      <p>Foto dokumentasi sebuah upacara pengibaran bendera pada 17 Agustus 2024.</p>
+    </div>
+    <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="pra1.jpg" alt="Gambar 1">
+        <img class="slide" src="pra2.jpg" alt="Gambar 2">
+        <img class="slide" src="pra3.jpg" alt="Gambar 3">
+        <img class="slide" src="pra4.jpg" alt="Gambar 3">
+      </div>
+      <h2>PERSAMI SMKN 8 JEMBER 2024</h2>
+      <p>Beberapa foto dokumentasi pada acara Perkemahan Sabtu Minggu di SMKN 8 Jember bersama dengan anggota Pramukanya.</p>
+    </div>
+    <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="ft3.jpg" alt="Gambar 1">
+        <img class="slide" src="ft2.jpg" alt="Gambar 2">
+        <img class="slide" src="ft1.jpg" alt="Gambar 3">
+        <img class="slide" src="ft4.jpg" alt="Gambar 3">
+      </div>
+      <h2>NONTON BARENG EDDY'S ENGLISH</h2>
+      <p>Sebuah foto dokumentasi pada event "Nonton Bareng EDDY'S ENGLISH" di Kota Cinema Mall Jember.</p>
+    </div>
+     <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="no1.png" alt="Gambar 1">
+        <img class="slide" src="no2.png" alt="Gambar 2">
+        <img class="slide" src="no3.png" alt="Gambar 3">
+      </div>
+      <h2>No Difference</h2>
+      <p>Sebuah foto dari lomba foto yang bertemakan "Perbedaan Agama"</p>
+    </div>
+     <div class="project-card">
+      <div class="slider-container">
+        <img class="slide active" src="lom1.png" alt="Gambar 1">
+      </div>
+      <h2>Variasi Ekspresi</h2>
+      <p>Sebuah foto hasil dari lomba FKGWP 2024 Festival Kaki Gunung Watu Pecah 2024.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Tombol Shutter Visual | <a href="index.html">Kembali ke Beranda</a></p>
+  </footer>
+
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const projectList = document.getElementById('projectList');
+    searchBox.addEventListener('input', function () {
+      const keyword = this.value.toLowerCase();
+      const cards = projectList.getElementsByClassName('project-card');
+      Array.from(cards).forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(keyword) ? 'block' : 'none';
+      });
+    });
+
+    const sliders = document.querySelectorAll('.slider-container');
+    sliders.forEach(slider => {
+      const slides = slider.querySelectorAll('.slide');
+      let index = 0;
+      setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design - Tombol Shutter Visual</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header, footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    h1 {
+      margin: 0;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .project-card {
+      background-color: #1a1a1a;
+      border: 1px solid #444;
+      padding: 1rem;
+      width: 300px;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .project-card h2 {
+      color: #fff;
+    }
+    .project-card p {
+      color: #ccc;
+    }
+    .project-card a {
+      color: #0af;
+      text-decoration: none;
+    }
+    .search {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .search input {
+      padding: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1rem;
+    }
+   .slider-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+    .slide.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Graphic Design</h1>
+    <nav>
+      <a href="index.html" style="color:#fff;">← Back to Home</a>
+    </nav>
+  </header>
+
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="Cari projek Grapic Design...">
+  </div>
+  <div class="projects" id="projectList">
+    <div class="project-card">
+      <img src="Ekskul 1.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>MARCHING BAND OPEN RECRUITMENT</h2>
+      <p>Sebuah Poster perekrutan anggota batu Marching Band di SMAN 1 Umbulsari.</p>
+    </div>
+    <div class="project-card">
+      <img src="Ekskul 2.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>PRASKALABER BAGI-BAGI TAKJIL</h2>
+      <p>Poster dari salah satu event Pramuka SMKN 8 Jember yaitu bagi bagi takjil.</p>
+    </div>
+    <div class="project-card">
+      <img src="Ekskul 3.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>PRASKALABER OPEN RECRUITMENT</h2>
+      <p>Poster perekrutan anggota baru eskul Pramuka SMKN 8 Jember.</p>
+    </div>
+ <div class="project-card">
+  <div class="slider-container">
+    <img class="slide active" src="gsm1.jpg" alt="Gambar 1">
+    <img class="slide" src="gsm2.jpg" alt="Gambar 2">
+    <img class="slide" src="gsm3.jpg" alt="Gambar 3">
+    <img class="slide" src="gsm4.jpg" alt="Gambar 4">
+    <img class="slide" src="gsm5.jpg" alt="Gambar 5">
+    <img class="slide" src="gsm6.jpg" alt="Gambar 6">
+    <img class="slide" src="gsm7.jpg" alt="Gambar 7">
+    <img class="slide" src="gsm8.jpg" alt="Gambar 8">
+    <img class="slide" src="gms9.jpg" alt="Gambar 9">
+  </div>
+  <h2>JATIM BANGKIT LOGO DESIGN</h2>
+  <p>Sebuah hasil desain untuk membranding yel-yel "Jatim Bangkit" dalam LKS 2025 cabang Graphic Design Technology.</p>
+    </div>
+        <div class="project-card">
+      <img src="poster7.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>KEBIASAAN UNIK POSTER</h2>
+      <p>Sebuah poster bertemakan kebiasana apa saja yang dilakukan di bulan Ramadhan.</p>
+    </div>
+    <div class="project-card">
+      <img src="Ig1.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>PRASKALABER INSTAGRAM DESIGN</h2>
+      <p>Berisikan beberapa contoh desain feed pada platform instagram pad a sebuah organisasi Pramuka SMKN 8 Jember.</p>
+      <a href="https://www.instagram.com/praskalaber.8_?igsh=MTJuNTVpcjI3aGl0bg==" target="_blank">Lihat di Instagram</a>
+    </div>
+    <div class="project-card">
+      <img src="Film 2.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>SEJATI SHORT FILM POSTER</h2>
+      <p>Poster dari salah satu film produksi tim saya yaitu "Sejati Short Film".</p>
+    </div>
+    <div class="project-card">
+      <img src="Film 3.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>DUA NADA SHORT FILM POSTER</h2>
+      <p>Poster dari salah satu film produksi tim saya yaitu "Dua Nada Short Film".</p>
+    </div>
+    <div class="project-card">
+      <img src="Film 4.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>KEMBALI PADANYA SHORT FILM POSTER</h2>
+      <p>Poster dari salah satu film produksi tim saya yaitu "Kembali Padanya Short Film".</p>
+    </div>
+    <div class="project-card">
+      <img src="Film 5.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>KRISIS LITERASI SHORT FILM POSTER</h2>
+      <p>Poster dari salah satu film produksi tim saya yaitu "Krisis Literasi Short Film".</p>
+    </div>
+    <div class="project-card">
+      <img src="Poster animek.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>FUN POSTER SOUSOU NO FRIEREN</h2>
+      <p>Poster Fern yang salah satu karakter dari anime Sou Sou No Frieren dengan gaya yang unik.</p>
+    </div>
+    <div class="project-card">
+      <img src="Poster Perbedaan ras.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>PERBEDAAN BUKAN JADI PENGHALANG POSTER</h2>
+      <p>Poster yang bertemakan "Meskipun Berbeda Tetapi bukan menjadi alasan untuk bercerai berai".</p>
+    </div>
+    <div class="project-card">
+      <img src="poster1.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>HINDARI DISKRIMINASI POSTER</h2>
+      <p>Sebuah poster layanan masyarakat yang berfungsi untuk mengingatkan untuk tidak melakukan tindak diskriminasi.</p>
+    </div>
+    <div class="project-card">
+      <img src="poster2.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>STOP PEMAKSAAN POSTER</h2>
+      <p>Poster layanan masyarakat yang bertemakan "Larangan akan pemaksaan kepada anak".</p>
+    </div>
+    <div class="project-card">
+      <img src="poster3.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>CEGAH DEPRESI POSTER</h2>
+      <p>Poster layanan masyarakat yang berfungsi mengingatkan kita untuk mencegah depresi.</p>
+    </div>
+    <div class="project-card">
+      <img src="poster4.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>TEH KOTAK FUN POSTER</h2>
+      <p>Poster dengan style unik yang merupakan perpaduan antara elemen grafis dan sebuah ilustrasi.</p>
+    </div>
+    <div class="project-card">
+      <img src="poster5.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>TANTANGAN KEMISKINAN POSTER</h2>
+      <p>Poster yang berhasil memperoleh juara 3 di event Olimpiade PPKN Bung Tomo II Universitas Muhammadyah Jember .</p>
+    </div>
+    <div class="project-card">
+      <img src="poster6.png" alt="Thumbnail Proyek A" style="width:100%; height:auto; border-radius: 8px;">
+      <h2>KRISIS TOLENRANSI POSTER</h2>
+      <p>Poster layanan masyarakat yang memberi tahu kita bahwasannya perilaku Intoleran masih marak terjadi di daerah lain sana.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Tombol Shutter Visual | <a href="index.html">Kembali ke Beranda</a></p>
+  </footer>
+
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const projectList = document.getElementById('projectList');
+    searchBox.addEventListener('input', function () {
+      const keyword = this.value.toLowerCase();
+      const cards = projectList.getElementsByClassName('project-card');
+      Array.from(cards).forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(keyword) ? 'block' : 'none';
+      });
+    });
+    const sliders = document.querySelectorAll('.slider-container');
+    sliders.forEach(slider => {
+      const slides = slider.querySelectorAll('.slide');
+      let index = 0;
+      setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
